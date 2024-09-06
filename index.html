@@ -19,7 +19,7 @@
                 font-family: "Open Sans", sans-serif;
             }
             #header {
-                height: 300px;
+                height: 400px;
                 width: auto;
                 background-color: #212121;
                 /* background-color: rgba(15, 35, 99, 0.42); */
@@ -33,6 +33,7 @@
             .header2 {
                 font-size: 2em;
                 margin-left: 50px;
+                color: #f3ebe1;
             }
             /* Center the slideshow and set its size */
             .swiper-container {
@@ -52,7 +53,7 @@
             /* Optional: Style the navigation buttons */
             .swiper-button-next,
             .swiper-button-prev {
-            color: #000;
+                color: #f3ebe1;
             }
 
             /* Optional: Style the pagination */
@@ -70,7 +71,7 @@
             }
             .header2 > .link {
                 margin: 0px;
-                color: rgb(75, 75, 216);
+                color: #f3ebe1;
                 font-size: 1.6rem;
             }
             #svgs {
@@ -87,9 +88,9 @@
                 width: auto;
             }
             #scribble {
-                top: 5px;
-                left: 100px;
-                height: 300px;
+                top: 100px;
+                left: 70px;
+                height: 270px;
                 width: auto;
             }
 
@@ -100,16 +101,9 @@
                 width: auto;
             }
 
-            /* #paper {
-                top: 150px;
-                left: 200px;
-                height: 150px;
-                width: auto;
-            } */
-
             #stars {
                 top: 10px;
-                right: 200px;
+                right: 70px;
                 height: 200px;
                 width: auto;
             }
@@ -121,11 +115,122 @@
                 position: relative;
                 z-index: 10; /* Text is above the SVGs */
             }
+            .G1 {
+                transform: translate(20px, 85px) rotate(-30deg);
+            }
+
+            .e1 {
+                transform: translate(13px, 60px) rotate(-25deg);
+            }
+
+            .e2 {
+                transform: translate(6px, 40px) rotate(-20deg);
+            }
+
+            .k1 {
+                transform: translate(3px, 23px) rotate(-15deg);
+            }
+
+            .s1 {
+                transform: translate(2px, 14px) rotate(-10deg);
+            }
+
+            .f {
+                transform: translate(1px, 8px) rotate(-5deg);
+            }
+
+            .o {
+                transform: translate(0px, 5px) rotate(0deg);
+            }
+
+            .r {
+                transform: translate(-1px, 8px) rotate(5deg);
+            }
+
+            .G2 {
+                transform: translate(-2px, 14px) rotate(10deg);
+            }
+
+            .e3 {
+                transform: translate(-3px, 25px) rotate(15deg);
+            }
+
+            .e4 {
+                transform: translate(-6px, 40px) rotate(20deg);
+            }
+
+            .k2 {
+                transform: translate(-14px, 60px) rotate(25deg);
+            }
+
+            .s2 {
+                transform: translate(-20px, 80px) rotate(30deg);
+            }
+
+            /* An inline-block element is placed as an inline
+            element (on the same line as adjacent content), 
+            but it behaves like a block element  */
+
+            span {
+                display: inline-block;
+            }
+
+            #title {
+                text-align: center; 
+                font-size: 80px; 
+                line-height: 150px;
+                color:#f3ebe1;
+                margin-top: 0px;
+                font-weight: bold;
+                z-index: 100;
+                padding: 40px;
+                position: relative;
+            }
+
+            #name {
+                color: #f3ebe1;
+                position: absolute;
+                top: 150px;
+                right: 400px;
+                /* display: flex; */
+                /* justify-content: center; */
+            }
+            iframe {
+                background-color: white;
+            }
+            #footer {
+                background-color: #212121;
+                height: 200px;
+                width: auto;
+                color: #f3ebe1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            #footer p {
+                color: #f3ebe1;
+                position: relative;
+            }
         </style>
     </head>
     <body>
         <div id="header">
-            <h1>PORTFOLIO</h1>
+            <!-- <h1>PORTFOLIO</h1> -->
+            <div id='title'>
+                    <!-- Declare all the characters of text 
+                        one-by-one, inside span tags -->
+                    <span class="G1">P</span>
+                    <span class="e1">O</span>
+                    <span class="e2">R</span>
+                    <span class="k1">T</span>
+                    <span class="s1">F</span>
+                    <span class="f">O</span>
+                    <span class="o">L</span>
+                    <span class="r">I</span>
+                    <span class="G2">O</span>
+            </div>
+            <p id="name">by kristi.</p>
             <div id="svgs">
                 <img id="scribble" src="img/1.svg">
                 <img id="barcode" src="img/2.svg">
@@ -134,18 +239,21 @@
             </div>
         </div>
         <div class="header2">
-            <p>Ascend Marketing Material</p>
+            <p>ASCEND MARKETING MATERIAL.</p>
         </div>
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="img/ascend_photoday.png" alt="Image 4"></div>
-                <div class="swiper-slide"><img src="img/ascend_fallrecruit.png" alt="Image 6"></div>
-                <div class="swiper-slide"><img src="img/ascend_infographic.png" alt="Image 1"></div>
-                <div class="swiper-slide"><img src="img/ascend_pres.JPEG" alt="Image 2"></div>
-                <div class="swiper-slide"><img src="img/ascend_pres1.JPEG" alt="Image 3"></div>
-                <div class="swiper-slide"><img src="img/ascend_photoday.png" alt="Image 4"></div>
-                <div class="swiper-slide"><img src="img/ascend_apps.png" alt="Image 5"></div>
-                <div class="swiper-slide"><img src="img/ascend_fam_tournament.png" alt="Image 6"></div>
+                <div class="swiper-slide"><img src="img/ascend_photoday.png"></div>
+                <div class="swiper-slide"><img src="img/ascend_fallrecruit.png"></div>
+                <div class="swiper-slide"><img src="img/ascend_infographic.png"></div>
+                <div class="swiper-slide"><img src="img/ascend_claire1.png"></div>
+                <div class="swiper-slide"><img src="img/ascend_claire2.png"></div>
+                <div class="swiper-slide"><img src="img/ascend_caleb1.png"></div>s
+                <div class="swiper-slide"><img src="img/ascend_caleb2.png"></div>
+                <div class="swiper-slide"><img src="img/ascend_kristi1.png"></div>
+                <div class="swiper-slide"><img src="img/ascend_kristi2.png"></div>
+                <div class="swiper-slide"><img src="img/ascend_apps.png"></div>
+                <div class="swiper-slide"><img src="img/ascend_fam_tournament.png"></div>
             </div>
           
             <!-- Add navigation if needed -->
@@ -154,11 +262,14 @@
             <div class="swiper-pagination"></div>
         </div>
         <div class="header2">
-            <p>Web Development Project- Red Dragon Realty</p>
+            <p>WEB DEVELOPMENT PROJECT.</p>
             <a class="link" href="https://kristiiwuu.github.io/Red-Dragon-Realty/"><p>Visit</p></a>
         </div>
         <div id="website">
             <iframe id="realty-website" src="https://kristiiwuu.github.io/Red-Dragon-Realty/"></iframe>        
+        </div>
+        <div id="footer">
+            <!-- <p>Kristi Wu</p> -->
         </div>
 
         <script>
