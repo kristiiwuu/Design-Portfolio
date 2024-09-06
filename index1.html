@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kristi's Design Dump</title>
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <style>
+            body {
+                background-color: #faf6f1;
+                position: relative;
+            }
+            body, h1 {
+                margin: 0px;
+                padding: 0px;
+                font-family: "Open Sans", sans-serif;
+            }
+            #header {
+                height: 300px;
+                width: auto;
+                background-color: rgba(15, 35, 99, 0.42);
+                text-align: center;
+            }
+            h1 {
+                line-height: 300px;
+                font-size: 5em;
+            }
+            .header2 {
+                font-size: 2em;
+                margin-left: 50px;
+            }
+            /* Center the slideshow and set its size */
+            .swiper-container {
+            width: auto; /* Set the desired width */
+            height: 550px; /* Set the desired height */
+            margin: 100px auto 0 auto; /* Center horizontally and push down 300px from the top */
+            position: relative; /* Ensure positioning is relative for internal elements */
+            }
+            .swiper-wrapper img {
+                height: 500px;
+                width: auto;
+  
+                display: block; /* Make the image a block element */
+                margin: 0 auto; /* Center the image horizontally */
+            }
+
+            /* Optional: Style the navigation buttons */
+            .swiper-button-next,
+            .swiper-button-prev {
+            color: #000;
+            }
+
+            /* Optional: Style the pagination */
+            .swiper-pagination {
+                position: relative;
+                bottom: 0px; /* Adjust the position of the pagination */
+            }
+            #website {
+                display: flex;
+                justify-content: center;
+            }
+            #realty-website {
+                height: 500px;
+                width: 1000px;
+            }
+            .header2 > .link {
+                margin: 0px;
+                color: rgb(75, 75, 216);
+                font-size: 1.6rem;
+            }
+            #svgs {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: none; /* Optional: prevents SVGs from affecting interaction */
+            }
+            #scribble, #barcode, #paper, #stars {
+                position: absolute;
+                height: 100px;
+                width: auto;
+            }
+            #scribble {
+                top: 5px;
+                left: 100px;
+                height: 300px;
+                width: auto;
+            }
+
+            #barcode {
+                top: 150px;
+                right: 150px;
+                height: 150px;
+                width: auto;
+            }
+
+            /* #paper {
+                top: 150px;
+                left: 200px;
+                height: 150px;
+                width: auto;
+            } */
+
+            #stars {
+                top: 10px;
+                right: 200px;
+                height: 200px;
+                width: auto;
+            }
+
+            /* Ensure the header text stays on top */
+            h1 {
+                line-height: 300px;
+                font-size: 5em;
+                position: relative;
+                z-index: 10; /* Text is above the SVGs */
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Portfolio</h1>
+            <div id="svgs">
+                <img id="scribble" src="img/1.svg">
+                <img id="barcode" src="img/2.svg">
+                <!-- <img id="paper" src="img/3.svg"> -->
+                <img id="stars" src="img/4.svg">
+            </div>
+        </div>
+        <div class="header2">
+            <p>Ascend Marketing Material</p>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/ascend_photoday.png" alt="Image 4"></div>
+                <div class="swiper-slide"><img src="img/ascend_fallrecruit.png" alt="Image 6"></div>
+                <div class="swiper-slide"><img src="img/ascend_infographic.png" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="img/ascend_pres.JPEG" alt="Image 2"></div>
+                <div class="swiper-slide"><img src="img/ascend_pres1.JPEG" alt="Image 3"></div>
+                <div class="swiper-slide"><img src="img/ascend_photoday.png" alt="Image 4"></div>
+                <div class="swiper-slide"><img src="img/ascend_apps.png" alt="Image 5"></div>
+                <div class="swiper-slide"><img src="img/ascend_fam_tournament.png" alt="Image 6"></div>
+            </div>
+          
+            <!-- Add navigation if needed -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="header2">
+            <p>Web Development Project- Red Dragon Realty</p>
+            <a class="link" href="https://kristiiwuu.github.io/Red-Dragon-Realty/"><p>Visit</p></a>
+        </div>
+        <div id="website">
+            <iframe id="realty-website" src="https://kristiiwuu.github.io/Red-Dragon-Realty/"></iframe>        
+        </div>
+
+        <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+            delay: 3000,
+            },
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+        });
+        </script>       
+    </body>
+</html>
