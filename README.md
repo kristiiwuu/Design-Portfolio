@@ -1,1 +1,1 @@
-https://kristiiwuu.github.io/design_portfolio/
+https://kristiiwuu.github.io/Design-Portfolio/
